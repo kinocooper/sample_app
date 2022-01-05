@@ -1,0 +1,5 @@
+class AddTestToLists < ActiveRecord::Migration[6.1]
+  def change
+    add_column :lists, :test, :string
+  end
+end
