@@ -3,6 +3,9 @@
 <%  @lists.each do |list| %>
 
   <p>タイトル</p>
-  <span><%= list.title %></span>
+  <span>
+    <%= link_to list.title, list_path(list.id) %>
+<!--繰り返し中　レコードのタイトルを表示、リンク先のURLは現在のidを変数展開で作る-->
+  </span>
 
 <% end %>
