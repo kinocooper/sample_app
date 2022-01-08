@@ -7,8 +7,12 @@
     <%= link_to list.title, list_path(list.id) %>
 <!--繰り返し中　レコードのタイトルを表示、リンク先のURLは現在のidを変数展開で作る-->
   </span>
-  
+
   <p>画像</p>
-  <%= image_tag list.iamge, size:"200x200" %>
+  <% if list.image.attached? %>
+    <%= image_tag list.image, size: "200x200" %>
+  <% else %>
+    <%= image_tag 'no_image', size: "200x200" %>
+  <% end %>
 
 <% end %>
