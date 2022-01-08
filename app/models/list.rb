@@ -3,5 +3,5 @@ class List < ApplicationRecord
 
   validates:title,presence:true #tutleカラムのプレゼンスが存在する(true)ならば通す
   validates:body,presence:true
-  validates:image,presence:true 
+  validates:image,presence:true
 end
