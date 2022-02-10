@@ -45,6 +45,11 @@ group :development do
   gem 'spring'
 end
 
+# gem 'hirb'
+gem 'hirb', '~> 0.7.3'
+# gem 'hirb-unicode'
+gem 'hirb-unicode-steakknife', '~> 0.0.9'
+
 group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 3.26'
@@ -55,3 +60,5 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'dotenv-rails'
